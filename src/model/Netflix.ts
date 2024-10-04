@@ -3,6 +3,9 @@ import { DatabaseModel } from "./DatabaseModel";
 const database = new DatabaseModel().pool;
 
 export default class Netflix {
+    static listarFilmes() {
+        throw new Error('Method not implemented.');
+    }
 
     static async listarNetflixTitles(): Promise<any | string> {
         const queryNetflixTitles = `SELECT * FROM netflix_titles;`;
